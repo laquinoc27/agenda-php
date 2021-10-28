@@ -2,7 +2,7 @@
     session_start(); 
     if (isset($_SESSION['email'])) { 
         session_destroy(); 
-        $response['msg'] = 'Redireccionar'; 
+        $response['msg'] = 'Redireccionar';
     }else{
         $response['msg'] = 'Sesion no iniciada'; 
     }

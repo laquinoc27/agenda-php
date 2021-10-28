@@ -265,7 +265,7 @@ function validarSession(){
       }
     },
     error: function(data){
-      //window.location.href = './index.html'
+      window.location.href = './index.html'
     }
   })
 }
