@@ -165,7 +165,7 @@ class Login {
       },
       error: function(){
         $('#message').css({ background: "#a40b0bb3" })
-        showMessage("Ha ocurrido un error al generar los usuarios"); 
+        showMessage("¡Ha ocurrido un error al generar los usuarios!"); 
       }
     })
   }
