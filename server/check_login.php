@@ -10,7 +10,7 @@
     if ($response['conexion']=='OK') { 
       if($con->verifyUsers() > 0){ 
   
-      //Verificar que el correo del usuario está registrado
+      //Verificar que el correo del usuario esté registrado
       $resultado_consulta = $con->consultar(['usuarios'], ['email', 'password'], 'WHERE email="'.$_POST['username'].'"');
   
       if ($resultado_consulta->num_rows != 0) { 
