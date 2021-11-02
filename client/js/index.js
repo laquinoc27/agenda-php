@@ -1,10 +1,4 @@
-/*
-function showMessage(message) {
-  $('#message').html('<p>' + message + '</p>').fadeIn('slow').delay(5000)
-  $('.overlay').fadeOut('slow')
-}
-*/
-
+/*Verificar base de datos*/
 function verificarConexion() {
   $.ajax({
     url: '../server/check_database.php',
@@ -25,6 +19,7 @@ function verificarConexion() {
   })
 }
 
+/*Crear base de datos*/
 function crearDB() {
   self = $('.loader-container h3');
   self.text('Revisando existencia de base de datos');
@@ -49,6 +44,7 @@ function crearDB() {
   })
 }
 
+/*Crear tabla*/
 function crearTabla() {
   self = $('.loader-container h3')
   self.text('Verificando tablas');
@@ -74,6 +70,7 @@ function crearTabla() {
   })
 }
 
+/*Inicializar el sistema, verificar la existencia de base de datos y tablas*/
 $(function () {
   verificarConexion()
   var l = new Login();
@@ -113,7 +110,7 @@ class Login {
       this.sendForm()
     })
   }
-
+  
   sendForm() {
     let form_data = new FormData();
     form_data.append('username', $('#user').val())

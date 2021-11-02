@@ -12,19 +12,19 @@
     $insert->bind_param("ssss", $email, $nombre, $password, $fecha_nacimiento); 
 
     $defaultPassword = '123456';
-    $email = "usuario@mail.com";
+    $email = "usuario@xmail.com";
 	  $nombre = "Usuario agenda";
     $password = password_hash($defaultPassword, PASSWORD_DEFAULT);
     $fecha_nacimiento = "1978-12-10";
     $insert->execute();
 
-    $email = "marisol@mail.com";
+    $email = "marisol@xmail.com";
 	  $nombre = "Marisol Gerónimo";
     $password = password_hash($defaultPassword, PASSWORD_DEFAULT); 
     $fecha_nacimiento = "1978-12-10";
     $insert->execute();
 
-    $email = "luis@mail.com";
+    $email = "luis@xmail.com";
 	  $nombre = "Luis Aquino";
     $password = password_hash($defaultPassword, PASSWORD_DEFAULT);
     $fecha_nacimiento = "1978-10-27";

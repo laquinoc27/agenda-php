@@ -7,8 +7,8 @@ class ConectorBD
   private $host = 'localhost'; //Nombre del servidor
   public $user = 'root'; //Nombre de usuario con permisos para crear bases de datos / tablas / insertar información.
   private $password = ''; //Conrtaseña de usuario 
-  public $database = 'db_agendaphp_nexu'; //Nombre de base de datos
-  /****************************************************************************************************************/
+  public $database = 'db_agendaphp_nextu'; //Nombre de base de datos
+  /*******************************************************************************************/
 
   private $conexion;
 

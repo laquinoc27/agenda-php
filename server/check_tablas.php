@@ -11,20 +11,20 @@
     
     $result = $con->createTable($usuarios->nombreTabla, $usuarios->data); 
     if( $result == "OK"){ 
-    $response['msg'] = 'OK';
-    $response['detalle'] = "OK";
-    $response['usuarios'] = 'OK';
+        $response['msg'] = 'OK';
+        $response['detalle'] = "OK";
+        $response['usuarios'] = 'OK';
     }else{ 
-    $response['detalle'] .= "<li>Error al crear la tabla usuarios.</li>";
+        $response['detalle'] .= "<li>Error al crear la tabla usuarios.</li>";
     }
     
     $result = $con->createTable($eventos->nombreTabla, $eventos->data);
     if( $result == "OK"){ 
-    $response['msg'] = 'OK';
-    $response['detalle'] = "OK";
-    $response['eventos'] = 'OK';
+        $response['msg'] = 'OK';
+        $response['detalle'] = "OK";
+        $response['eventos'] = 'OK';
     }else{ 
-    $response['detalle'] .= "<li>Error al crear la tabla eventos.</li>";
+        $response['detalle'] .= "<li>Error al crear la tabla eventos.</li>";
     }
 
     if($response['eventos'] =='OK' AND $response['usuarios'] == 'OK' ){ 
@@ -41,8 +41,8 @@
         $response['detalle'] = 'OK';
     }
     }else{
-    $response['detalle'] .='</ul> </br>Verifique que los datos del usuario utilizado para realizar la conexión en el archivo <code>conector.php</code> cuentr con permisos administrativos en phpmyadmin';
-    $response['msg'] = $response['detalle'];
+        $response['detalle'] .='</ul> </br>Verifique que los datos del usuario utilizado para realizar la conexión en el archivo <code>conector.php</code> cuentr con permisos administrativos en phpmyadmin';
+        $response['msg'] = $response['detalle'];
     }
 
     echo json_encode($response); 

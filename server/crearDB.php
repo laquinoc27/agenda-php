@@ -7,7 +7,7 @@
 
         if ($database != "OK"){
 
-        $conexion['msg'] = "<h6><b>Error de privilegios</b></h6></br>El usuario <b>'$con->user'</b> no existe o no posee la permisología requerida para crear la base de datos <b>$con->database</b>. Si desea crear automaticamente la base de datos, ingrese los parámetros de un usuario phpmyadmin con permisos para crear bases de datos en las variables usuario <b>\$user </b> y contraseña <b>\$password</b> respectivamente en el archivo <b>conector.php</b> en la carpeta <b>server</b> del proyecto. O bien puede crearla manualmente desde el panel de control phpmyadmin."; //Mostrar mensaje
+        $conexion['msg'] = "<h6><b>Error de privilegios</b></h6></br>El usuario <b>'$con->user'</b> no existe o no tiene permisos para crear la base de datos <b>$con->database</b>. Si desea crear automaticamente la base de datos, ingrese los parámetros de un usuario phpmyadmin con permisos para crear bases de datos en las variables usuario <b>\$user </b> y contraseña <b>\$password</b> respectivamente en el archivo <b>conector.php</b> en la carpeta <b>server</b> del proyecto. O bien puede crearla manualmente desde el panel de control phpmyadmin."; //Mostrar mensaje
 
         }else{ 
 
